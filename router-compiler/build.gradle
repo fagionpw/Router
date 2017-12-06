@@ -4,7 +4,7 @@ apply plugin: 'kotlin'
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':router:router-annotation')
+    implementation project(':router-annotation')
     // AutoService
     implementation "com.google.auto.service:auto-service:$rootProject.ext.autoServiceVersion"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"

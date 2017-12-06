@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode VERSION_CODE as int
-        versionName VERSION_NAME
+        versionCode rootProject.ext.projectIds.version_code as int
+        versionName rootProject.ext.projectIds.version
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -33,5 +33,5 @@ dependencies {
     })
     testImplementation 'junit:junit:4.12'
 
-    api project(':router:router-annotation')
+    api project(':router-annotation')
 }

@@ -8,13 +8,16 @@ green=$(tput setaf 2)
 
 router_api_aar_path="./router-api/build/outputs/aar/router-api-release.aar"
 router_compiler_jar_path="./router-compiler/build/libs/router-compiler.jar"
+router_annotation_jar_path="./router-annotation/build/libs/router-annotation.jar"
 
 router_api_aar_target_path="./output/router-api.aar"
 router_compiler_jar_target_path="./output/router-compiler.jar"
+router_annotation_jar_target_path="./output/router-annotation.jar"
 
 moveOutput() {
     cp ${router_api_aar_path} ${router_api_aar_target_path}
     cp ${router_compiler_jar_path} ${router_compiler_jar_target_path}
+    cp ${router_annotation_jar_path} ${router_annotation_jar_target_path}
 }
 
 gradle -q build
